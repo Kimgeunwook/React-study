@@ -1,6 +1,11 @@
 import React from 'react';
-function Hello({aa})
+function Hello({aa,isSpecial})
 {
-    return <div> 안녕하세요!{aa}님p2</div>;
+    return (
+        <div>
+            {isSpecial && <b>*</b>}
+            안녕하세요 {aa}
+        </div>
+    )
 }
 export default Hello;
