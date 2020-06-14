@@ -9,24 +9,8 @@ function User({user}){
 }
 
 
-function UserList(){
-    const users = [
-        {
-            id:1,
-            username : '근욱',
-            email:'wook961206@naver.com'
-        },
-        {
-            id:2,
-            username : '지호',
-            email:'wlgh@naver.com'
-        },
-        {
-            id:3,
-            username : '병준',
-            email:'moon@naver.com'
-        }
-    ];
+function UserList({users}){
+   
 
     return(
         <div>
