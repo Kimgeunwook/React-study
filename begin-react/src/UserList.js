@@ -1,6 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function User({user, onRemove, onToggle}){
+    // useEffect(() => {
+    //     console.log('컴포넌트가 화면에 나타남');
+    //     //props -> state
+    //     //rest api
+    //     // d3 video.js 
+    //     //setinterval, settimeout
+    //     //ui가 나타난 이후이므로 dom에 접근 가능
+    //     return() => {
+    //         //clearinterval, cleartimeout
+    //         //라이브러리 인스턴스 제거
+    //         console.log('컴포넌트가 화면에서 사라짐')
+    //     }
+    // }, []);
+    useEffect(() => {
+        console.log('user 값이 설정됨');
+        console.log(user);
+        return() => {
+            console.log('user 값이 바뀌기 전');
+            console.log(user);
+
+        }
+    },[user]);
     return (
         <div>
                 <b style ={{

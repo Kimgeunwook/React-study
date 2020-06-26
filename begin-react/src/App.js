@@ -54,7 +54,7 @@ const onCreate = () =>
     username:'',
     email:''
   });
-  console.log(nextId.current); //4
+  //console.log(nextId.current); //4
   nextId.current += 1;
 }
 
