@@ -14,10 +14,10 @@ function User({user, onRemove, onToggle}){
     //         console.log('컴포넌트가 화면에서 사라짐')
     //     }
     // }, []);
-    useEffect(() => {
+    useEffect(() => { //렌더링 될 떄도 호출
         console.log('user 값이 설정됨');
         console.log(user);
-        return() => {
+        return() => { //해당 값이 바뀌기 전 호출
             console.log('user 값이 바뀌기 전');
             console.log(user);
 
