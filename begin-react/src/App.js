@@ -1,7 +1,9 @@
 import React, { useRef, useReducer, useMemo, useCallback ,createContext} from 'react';
 import UserList from './UserList';
+import produce from 'immer';
 import CreateUser from './CreateUser';
 import useInputs from './useInputs';
+window.produce = produce
 function countActiveUsers(users) {
   console.log('활성 사용자 수를 세는중...');
   return users.filter(user => user.active).length;
